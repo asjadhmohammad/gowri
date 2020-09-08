@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("87.jpeg");
+  font-family: 'Open Sans Condensed','Arial Narrow', serif;
+}
+
+a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color:#2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow:hidden;
+  transition: 0.2s;
+  font-weight: bolder;
+}
+a:hover{
+  color:#255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 1s;
+}
+a span{
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+a span:nth-child(3){
+  bottom: 0;
+  right:-100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+}
+a:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+a span:nth-child(2){
+  top: -100%;
+  right:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+}
+a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(4){
+  bottom: -100%;
+  left:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+}
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+.card{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card .imgBox,
+.card .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card .imgBox{
+  top: 0;
+  left: 0;
+}
+.card:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card .imgBox img{
+  width: 100%;
+height: 300px;
+}
+.card .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card:hover .details{
+  top: 0;
+  left: 0;
+}
+.card .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card1 .imgBox,
+.card1 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card1 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card1:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card1 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card1 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card1:hover .details{
+  top: 0;
+  left: 0;
+}
+.card1 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card1 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card2{
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card2 .imgBox,
+.card2 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card2 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card2:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card2 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card2 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card2:hover .details{
+  top: 0;
+  left: 0;
+}
+.card2 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card2 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card3{
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card3 .imgBox,
+.card3 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card3 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card3:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card3 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card3 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card3:hover .details{
+  top: 0;
+  left: 0;
+}
+.card3 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card3 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card4{
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card4 .imgBox,
+.card4 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card4 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card4:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card4 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card4 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card4:hover .details{
+  top: 0;
+  left: 0;
+}
+.card4 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card4 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card5{
+  position: absolute;
+  top: 120%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card5 .imgBox,
+.card5 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card5 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card5:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card5 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card5 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card5:hover .details{
+  top: 0;
+  left: 0;
+}
+.card5 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card5 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card6{
+  position: absolute;
+  top: 190%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card6 .imgBox,
+.card6 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card6 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card6:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card6 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card6 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card6:hover .details{
+  top: 0;
+  left: 0;
+}
+.card6 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card6 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card7{
+  position: absolute;
+  top: 190%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card7 .imgBox,
+.card7 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card7 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card7:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card7 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card7 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card7:hover .details{
+  top: 0;
+  left: 0;
+}
+.card7 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card7 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card8{
+  position: absolute;
+  top: 190%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card8 .imgBox,
+.card8 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card8 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card8:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card8 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card8 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card8:hover .details{
+  top: 0;
+  left: 0;
+}
+.card8 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card8 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/
+.card9{
+  position: absolute;
+  top: 260%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 400px;
+  background: #262626;
+  overflow: hidden;
+}
+.card9 .imgBox,
+.card9 .details{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: .5s;
+  padding: 60px 30px;
+
+}
+.card9 .imgBox{
+  top: 0;
+  left: 0;
+}
+.card9:hover .imgBox{
+  top:0;
+  left: -100%;
+}
+.card9 .imgBox img{
+  width: 100%;
+  height: 300px;
+
+}
+.card9 .details{
+  background: #262626;
+  top: 0;
+  left: 100%;
+}
+.card9:hover .details{
+  top: 0;
+  left: 0;
+}
+.card9 .details h2{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #fff;
+}
+.card9 .details p{
+  margin: 20px 0 0;
+  color: #fff;
+
+}
+/*=========================*/

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed','Arial Narrow', serif;
+}
+body{
+  background-image: url("bg2.jpg");
+  background-size: cover;
+  overflow: hidden;
+  font-family: 'Open Sans Condensed','Arial Narrow', serif;
+  /*font-family: 'Bad Script', cursive;*/
+}
+.angel-1,.angel-2,.angel-3{
+  position: absolute;
+}
+.angel-1{
+
+  top: 61%;
+  left:1%;
+  animation: angel1Move 1s linear infinite;
+}
+.angel-2{
+
+  top: 61%;
+  left:35%;
+  animation: angel2Move 1s linear infinite;
+}
+.angel-3{
+
+  top: 61%;
+  left:71%;
+  animation: angel3Move 1s linear infinite;
+}
+
+/*==angel animation starting==*/
+  @keyframes angel1Move {
+    0%{
+      top: 61%;
+      left:1%;
+    }
+    50%{
+      top:51%;
+      left:1%;
+    }
+    100%{
+      top: 61%;
+      left:1%;
+    }
+  }
+
+  @keyframes angel2Move {
+    0%{
+      top: 61%;
+      left:35%;
+    }
+    50%{
+      top:51%;
+      left:35%;
+    }
+    100%{
+      top: 61%;
+      left:35%;
+    }
+  }
+
+  @keyframes angel3Move {
+    0%{
+      top: 61%;
+      left:71%;
+    }
+    50%{
+      top:51%;
+      left:71%;
+    }
+    100%{
+      top:61%;
+      left:71%;
+    }
+  }
+
+/*==angel animation starting==*/
+
+/*==box animation starting==*/
+.box-1{
+  position: absolute;
+  right: -40%;
+  top: 30%;
+  animation: box1move linear 10s;
+}
+
+@keyframes clouds1move {
+  0%{
+    top: 70%;
+    right:-20%;
+  }/*
+  50%{
+    right:110%;
+  }*/
+  100%{
+    top: 70%;
+    right:100%;
+  }
+}
+/*
+.box-2{
+  position: absolute;
+  right: -20%;
+  top: 17%;
+  animation: box1move linear 200s;
+  animation-delay: 2s;
+}
+.box-3{
+  position: absolute;
+  right: -20%;
+  top: 2%;
+  animation: box1move linear 300s;
+  animation-delay: 5s;
+}
+*/
+/*box animation start*/
+@keyframes box1move {
+  0%{
+
+    right:-20%;
+  }/*
+  50%{
+    right:110%;
+  }*/
+  100%{
+
+    right:40%;
+  }
+}
+/*box animation end*/
+
+/*==box animation ending==*/
+
+
+/*==bomb animation starting==*/
+.bomb-1{
+  top: 30%;
+  left:-40%;
+  position: absolute;
+  animation: bomb1move linear 10s;
+}
+
+/*animation bomb start*/
+@keyframes bomb1move {
+  0%{
+      top: 30%;
+      left: -25%;
+  }
+  100%{
+    top: 30%;
+    left: 50%;
+  }
+}
+/*animation bomb end*/
+
+/*==bomb animation ending==*/

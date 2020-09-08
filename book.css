@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("bg7.jpg");
+  font-family: 'Open Sans Condensed','Arial Narrow', serif;
+}
+a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color:#2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow:hidden;
+  transition: 0.2s;
+  font-weight: bolder;
+}
+a:hover{
+  color:#255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 1s;
+}
+a span{
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+a span:nth-child(3){
+  bottom: 0;
+  right:-100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+}
+a:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+a span:nth-child(2){
+  top: -100%;
+  right:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+}
+a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(4){
+  bottom: -100%;
+  left:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+}
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+.card{
+  position: absolute;
+  top:50%;
+  left:20%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+  background-image: url("twoo.jpeg");
+}
+.card:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+  width: 5px;
+  height:100%;
+  background: gray;
+
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+
+}
+.card:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+  justify-content: center;
+  font-family: 'Bad Script', cursive;
+}
+/*=======================*/
+.card1{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card1:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card1:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card1:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card1 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card1:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card1 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+/*==========================*/
+.card2{
+  position: absolute;
+  top:50%;
+  left:80%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card2:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card2:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card2:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card2 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card2:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card2 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+/*=======================*/
+.card3{
+  position: absolute;
+  top:120%;
+  left:20%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card3:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card3:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card3:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card3 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card3:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card3 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+/*=======================*/
+.card4{
+  position: absolute;
+  top:120%;
+  left:50%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card4:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card4:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card4:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card4 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card4:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card4 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+
+/*=======================*/
+.card5{
+  position: absolute;
+  top:120%;
+  left:80%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card5:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card5:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card5:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card5 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card5:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card5 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+
+/*=======================*/
+.card6{
+  position: absolute;
+  top:190%;
+  left:20%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card6:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card6:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card6:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card6 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card6:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card6 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+
+/*=======================*/
+.card7{
+  position: absolute;
+  top:190%;
+  left:50%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card7:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card7:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card7:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card7 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card7:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card7 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+
+/*=======================*/
+.card8{
+  position: absolute;
+  top:190%;
+  left:80%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card8:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card8:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card8:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card8 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card8:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card8 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+/*=======================*/
+.card9{
+  position: absolute;
+  top:260%;
+  left:50%;
+  width:300px;
+  height:400px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transform: translate(-50%,-50%) perspective(2000px);
+  box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+  transition: 1s;
+}
+.card9:hover{
+  transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card9:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(-45deg);
+}
+.card9:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right:-5px;
+
+  width: 5px;
+  height:100%;
+  background: gray;
+  transform-origin: left;
+  transform: skewY(-45deg);
+}
+.card9 .imgBox{
+  width: 100%;
+  height:100%;
+  transform-origin: left;
+  transition: 1s cubic-bezier(.15,1.7,.84,.58);
+  z-index: 1;
+}
+.card9:hover .imgBox{
+  transform: rotateY(-135deg);
+}
+.card9 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+a{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color:#2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow:hidden;
+  transition: 0.2s;
+  font-weight: bolder;
+}
+a:hover{
+  color:#255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 1s;
+}
+a span{
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+a span:nth-child(3){
+  bottom: 0;
+  right:-100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+}
+a:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+a span:nth-child(2){
+  top: -100%;
+  right:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+}
+a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+a span:nth-child(4){
+  bottom: -100%;
+  left:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+}
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}

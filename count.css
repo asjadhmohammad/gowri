@@ -1,0 +1,125 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+*{
+  font-family: 'Open Sans Condensed','Arial Narrow', serif;
+}
+body{
+  background: url(bg6.jpg) 50% 50%;
+  background-size: cover;
+  font-weight: 400;
+	font-size: 15px;
+  font-family: 'Open Sans Condensed','Arial Narrow', serif;
+  background-color: black;
+}
+#snow_fall{
+  width:100%;
+  height: 100vh;
+  background-image: url("bg6.jpg");
+  display: flex;
+  justify-content: center;
+
+}
+#particles-js{
+  width:100%;
+  height: 100vh;
+  background-image: url("bg3.jpg");
+  display: flex;
+  justify-content: center;
+
+}
+.container{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+
+.container h3{
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  font-style: italic;
+  font-size: 30px;
+  font-family: 'Bad Script', cursive;
+}
+.container h4{
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  font-style: italic;
+  font-family: 'Bad Script', cursive;
+  font-size: 24px;
+}
+.container h5{
+  position: absolute;
+  left: 20px;
+  top: 360px;
+  font-style: italic;
+  font-family: 'Bad Script', cursive;
+  font-size: 40px;
+
+}
+.count{
+  margin: 40px 0;
+}
+.count1{
+  margin: 50px 0;
+}
+.count2{
+  margin: 60px 0;
+}
+.countd{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin: 0 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+.countd span{
+  display: block;
+  font-size: 26px;
+  margin-top: 14px;
+}
+.countd1{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin: 0 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+.countd1 span{
+  display: block;
+  font-size: 26px;
+  margin-top: 14px;
+}
+.countd2{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  margin: 0 30px;
+  font-size: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+.countd2 span{
+  display: block;
+  font-size: 26px;
+  margin-top: 14px;
+}
